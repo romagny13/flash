@@ -1,0 +1,11 @@
+{% if flash.has('success') %}
+    <div class="alert alert-success">
+        {{ flash.getMessage('success') }}
+    </div>
+{% endif %}
+
+{% if flash.has('error') %}
+    <div class="alert alert-danger">
+        {{ flash.getMessage('error') }}
+    </div>
+{% endif %}
